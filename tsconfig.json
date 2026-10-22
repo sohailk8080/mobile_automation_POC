@@ -1,0 +1,28 @@
+/*{
+    "compilerOptions": {
+        "module": "NodeNext", // The module system used by Node.js    
+        "moduleResolution": "NodeNext", // Tells TS to look in node_modules for dependencies    
+        "target": "ES2022", // The version of JavaScript to compile down to    
+        "types": [
+            "node",
+            "@wdio/globals/types",
+            "@wdio/mocha-framework"
+        ], // Loads WebdriverIO & Mocha global types (like 'browser', 'describe', 'it')    
+        "esModuleInterop": true, // Allows default imports from modules with no default export    
+        "skipLibCheck": true // Skips type checking of declaration files to speed up compilation  
+    }
+}   */
+
+{
+  "compilerOptions": {
+    "moduleResolution": "node16",
+    "module": "node16",
+    "target": "ES2022",
+    "types": ["node", "@wdio/globals/types", "@wdio/mocha-framework"],
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  },
+  "ts-node": {
+    "transpileOnly": true
+  }
+}
